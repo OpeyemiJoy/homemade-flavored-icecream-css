@@ -1,0 +1,105 @@
+/* ==========================
+BODY & BACKGROUND
+========================== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    line-height: 1.5;
+    color: #3e2c1c;
+    background-image: url("../Images/vanillabackground.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ==========================
+MAIN CONTAINER
+========================== */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    backdrop-filter: blur(4px);
+}
+
+/* ==========================
+HEADINGS
+========================== */
+h1 {
+    text-align: center;
+    color: #b45f06;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #7a3700;
+    border-bottom: 2px solid #f3d6b3;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* ==========================
+IMAGES
+========================== */
+img.flavor {
+    display: block;
+    margin: 10px auto;
+    border-radius: 12px;
+    max-width: 250px;  /* limit image size */
+    height: auto;       /* maintain aspect ratio */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* ==========================
+LISTS
+========================== */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+.instruction-step {
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.instruction-step span {
+    font-size: 1.2rem;
+    margin-right: 8px;
+}
+
+/* ==========================
+NUTRITION SECTION
+========================== */
+.nutrition {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-left: 4px solid #e0a96d;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* ==========================
+LINKS
+========================== */
+a {
+    color: #b45f06;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* ==========================
+PARAGRAPHS
+========================== */
+p {
+    margin-bottom: 10px;
+}
