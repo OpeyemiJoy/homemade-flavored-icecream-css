@@ -1,105 +1,198 @@
 /* ==========================
-BODY & BACKGROUND
-========================== */
+   CSS Recipe Assignment
+   External Stylesheet
+   ========================== */
+
+/* 1. RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #b45f06;
+    --secondary-color: #7a3700;
+    --accent-color: #e0a96d;
+    --light-color: #fff9f0;
+    --dark-color: #3e2c1c;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* 2. BODY & BACKGROUND */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 10px;
-    line-height: 1.5;
-    color: #3e2c1c;
+    line-height: 1.6;
+    color: var(--dark-color);
     background-image: url("../Images/vanillabackground.avif");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    min-height: 100vh;
 }
 
-/* ==========================
-MAIN CONTAINER
-========================== */
+/* 3. MAIN CONTAINER */
 .container {
     max-width: 800px;
     margin: 30px auto;
     background: rgba(255, 255, 255, 0.85);
-    padding: 25px;
+    padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    backdrop-filter: blur(4px);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(5px);
 }
 
-/* ==========================
-HEADINGS
-========================== */
+/* 4. TYPOGRAPHY & COLORS */
 h1 {
     text-align: center;
-    color: #b45f06;
-    font-size: 2rem;
-    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
 }
 
 h2 {
-    color: #7a3700;
-    border-bottom: 2px solid #f3d6b3;
-    padding-bottom: 5px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--accent-color);
+    padding-bottom: 8px;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
 }
 
-/* ==========================
-IMAGES
-========================== */
+/* 5. IMAGES */
 img.flavor {
     display: block;
-    margin: 10px auto;
+    margin: 15px auto;
     border-radius: 12px;
-    max-width: 250px;  /* limit image size */
-    height: auto;       /* maintain aspect ratio */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    max-width: 250px;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: var(--transition);
 }
 
-/* ==========================
-LISTS
-========================== */
+img.flavor:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+/* 6. LISTS & INSTRUCTIONS */
 ul, ol {
-    padding-left: 20px;
-    margin-bottom: 10px;
+    padding-left: 25px;
+    margin-bottom: 20px;
 }
 
 .instruction-step {
-    margin-bottom: 12px;
-    font-size: 1rem;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    transition: var(--transition);
+}
+
+.instruction-step:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(5px);
 }
 
 .instruction-step span {
-    font-size: 1.2rem;
-    margin-right: 8px;
+    font-size: 1.3rem;
+    margin-right: 10px;
+    display: inline-block;
 }
 
-/* ==========================
-NUTRITION SECTION
-========================== */
+/* 7. NUTRITION SECTION */
 .nutrition {
     background: rgba(255, 255, 255, 0.9);
-    padding: 10px;
-    border-left: 4px solid #e0a96d;
-    border-radius: 8px;
-    margin-top: 15px;
+    padding: 20px;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
-/* ==========================
-LINKS
-========================== */
+.nutrition h2 {
+    margin-top: 0;
+}
+
+.nutrition ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.nutrition li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--accent-color);
+}
+
+.nutrition li:last-child {
+    border-bottom: none;
+}
+
+/* 8. LINKS */
 a {
-    color: #b45f06;
+    color: var(--primary-color);
     text-decoration: none;
-}
-a:hover {
-    text-decoration: underline;
+    font-weight: bold;
+    transition: var(--transition);
 }
 
-/* ==========================
-PARAGRAPHS
-========================== */
+a:hover {
+    color: var(--secondary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+/* 9. PARAGRAPHS & SPACING */
 p {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* 10. TIPS SECTION */
+.tips-highlight {
+    background: linear-gradient(135deg, #fff9f0, #f3d6b3);
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* 11. RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        margin: 15px;
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    img.flavor {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
+    
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
 }
