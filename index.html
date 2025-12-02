@@ -1,162 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Homemade Flavored Icecream</title>
-<!-- External CSS Link -->
-<link rel="stylesheet" href="./Assets/styles/index.css">
-
-/* ==========================
-BODY & BACKGROUND
-========================== */
-body {
-font-family: Arial, sans-serif;
-margin: 0;
-padding: 10px;
-line-height: 1.5;
-color: #3e2c1c;
-background-image: url("./Assets/Images/vanillabackground.avif");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-}
-
-/* ==========================
-MAIN CONTAINER
-========================== */
-.container {
-max-width: 800px;
-margin: 30px auto;
-background: rgba(255, 255, 255, 0.5); 
-padding: 25px;
-border-radius: 15px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-backdrop-filter: blur(4px);
-}
-
-/* ==========================
-HEADINGS
-========================== */
-h1 {
-text-align: center;
-color: #b45f06;
-font-size: 2rem;
-margin-bottom: 15px;
-}
-
-h2 {
-color: #7a3700;
-border-bottom: 2px solid #f3d6b3;
-padding-bottom: 5px;
-margin-top: 20px;
-margin-bottom: 10px;
-}
-
-/* ==========================
-IMAGES
-========================== */
-img.flavor {
-display: block;
-margin: 10px auto;
-border-radius: 12px;
-max-width: 200px;
-height: auto;
-}
-
-/* ==========================
-LISTS
-========================== */
-ul, ol {
-padding-left: 20px;
-margin-bottom: 10px;
-}
-
-.instruction-step {
-margin-bottom: 12px;
-font-size: 1rem;
-}
-
-.instruction-step span {
-font-size: 1.2rem;
-margin-right: 8px;
-}
-
-/* ==========================
-NUTRITION SECTION
-========================== */
-.nutrition {
-background: rgba(255, 255, 255, 0.8);
-padding: 10px;
-border-left: 4px solid #e0a96d;
-border-radius: 8px;
-margin-top: 15px;
-}
-
-a {
-color: #b45f06;
-text-decoration: none;
-}
-a:hover {
-text-decoration: underline;
-}
-
-p {
-margin-bottom: 10px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homemade Flavored Icecream</title>
+    <!-- External CSS File - All styling in separate file -->
+    <link rel="stylesheet" href="./Assets/styles/index.css">
 </head>
 <body>
-<div class="container">
+    <!-- Main Content Container -->
+    <div class="container">
+        <!-- Page Header Section -->
+        <header class="page-header">
+            <h1><i class="fas fa-ice-cream"></i> Homemade Flavored Icecream</h1>
+            <p class="description"><em>I absolutely love ice cream — creamy, sweet, and comforting!
+            Here are my favorite homemade flavors: Vanilla, Strawberry, and Choco-Vanilla.
+            Making them at home is so satisfying and delicious!</em></p>
+        </header>
 
-<h1>Homemade Flavored Icecream</h1>
-<p><em>I absolutely love ice cream — creamy, sweet, and comforting!
-Here are my favorite homemade flavors: Vanilla, Strawberry, and Choco-Vanilla.
-Making them at home is so satisfying and delicious!</em></p>
+        <!-- Ice Cream Flavors Section -->
+        <section class="flavors-section">
+            <h2>Our Signature Flavors</h2>
+            
+            <div class="flavors-grid">
+                <!-- Vanilla Card -->
+                <article class="flavor-card">
+                    <div class="card-image">
+                        <img src="./Assets/Images/vanilla1.avif" alt="Vanilla Ice Cream in a Bowl">
+                    </div>
+                    <h3>Vanilla Ice Cream</h3>
+                    <p><strong>Ingredients:</strong> heavy cream, milk, sugar, vanilla extract, pinch of salt, optional extras (chocolate chips, cookies, fruit).</p>
+                </article>
+                
+                <!-- Strawberry Card -->
+                <article class="flavor-card">
+                    <div class="card-image">
+                        <img src="./Assets/Images/vanilastraw.avif" alt="Strawberry Ice Cream in a Bowl">
+                    </div>
+                    <h3>Strawberry Ice Cream</h3>
+                    <p><strong>Ingredients:</strong> heavy cream, milk, sugar, fresh strawberries, pinch of salt, optional extras (chocolate chunks, berries).</p>
+                </article>
+                
+                <!-- Choco-Vanilla Card -->
+                <article class="flavor-card">
+                    <div class="card-image">
+                        <img src="./Assets/Images/Vanilachoco.avif" alt="Choco-Vanilla Ice Cream in a Bowl">
+                    </div>
+                    <h3>Choco-Vanilla Ice Cream</h3>
+                    <p><strong>Ingredients:</strong> heavy cream, milk, sugar, vanilla extract, cocoa powder, pinch of salt, optional extras (chocolate chips, nuts).</p>
+                </article>
+            </div>
+        </section>
 
-<h2>Vanilla Ice Cream</h2>
-<img class="flavor" src="./Assets/Images/vanilla1.avif" alt="Vanilla Ice Cream in a Bowl">
-<p><strong>Ingredients:</strong> heavy cream, milk, sugar, vanilla
-extract, pinch of salt, optional extras (chocolate chips, cookies, fruit).</p>
+        <!-- Instructions Section -->
+        <section class="instructions-section">
+            <h2><i class="fas fa-list-ol"></i> Step-by-Step Instructions</h2>
+            <p class="section-subtitle">Same method for all flavors</p>
+            
+            <div class="instructions-container">
+                <div class="instruction-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Mix Base Ingredients</h4>
+                        <p>Whisk sugar, milk, and salt together in a large bowl until fully dissolved.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Add Cream & Flavor</h4>
+                        <p>Stir in heavy cream and vanilla extract until the mixture is smooth and well combined.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Prepare for Freezing</h4>
+                        <p>Pour the mixture into a freezer-safe dish or ice cream maker container.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Initial Freeze</h4>
+                        <p>Freeze for 2 hours, then whisk vigorously to break up ice crystals.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h4>Repeat Whisking</h4>
+                        <p>Repeat the whisking process every hour for the best creamy texture.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h4>Add Mix-ins</h4>
+                        <p>Add chocolate chips, nuts, or fruit during the final stir before complete freezing.</p>
+                    </div>
+                </div>
+                
+                <div class="instruction-step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h4>Final Freeze & Serve</h4>
+                        <p>Freeze until firm (about 4-6 hours) and enjoy your homemade ice cream!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-<h2>Strawberry Ice Cream</h2>
-<img class="flavor" src="./Assets/Images/vanilastraw.avif" alt="Strawberry Ice Cream in a Bowl">
-<p><strong>Ingredients:</strong> heavy cream, milk, sugar, fresh strawberries, pinch of salt, optional extras (chocolate chunks, berries).</p>
+        <!-- Tips Section -->
+        <section class="tips-section">
+            <h2><i class="fas fa-lightbulb"></i> Pro Tips</h2>
+            
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <div class="tip-icon">❄️</div>
+                    <h4>Cold Ingredients</h4>
+                    <p>Use <u>very cold ingredients</u> for faster freezing and smoother texture.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">🥄</div>
+                    <h4>Blend for Creaminess</h4>
+                    <p>Blend the mixture after the first freeze for extra creaminess and air incorporation.</p>
+                </div>
+                
+                <div class="tip-card">
+                    <div class="tip-icon">⏰</div>
+                    <h4>Avoid Over-Freezing</h4>
+                    <p>Don't over-freeze your ice cream to keep it soft, scoopable, and delicious!</p>
+                </div>
+            </div>
+        </section>
 
-<h2>Choco-Vanilla Ice Cream</h2>
-<img class="flavor" src="./Assets/Images/Vanilachoco.avif" alt="Choco-Vanilla Ice Cream in a Bowl">
-<p><strong>Ingredients:</strong> heavy cream, milk, sugar, vanilla extract, cocoa powder, pinch of salt, optional extras (chocolate chips, nuts).</p>
+        <!-- Nutrition Section -->
+        <section class="nutrition-section">
+            <div class="nutrition-card">
+                <h2><i class="fas fa-apple-alt"></i> Nutrition Facts</h2>
+                <p class="serving-info">Per serving (approx. 1/2 cup)</p>
+                
+                <div class="nutrition-grid">
+                    <div class="nutrition-item">
+                        <h4>Calories</h4>
+                        <p class="nutrition-value">290</p>
+                    </div>
+                    
+                    <div class="nutrition-item">
+                        <h4>Carbohydrates</h4>
+                        <p class="nutrition-value">28g</p>
+                    </div>
+                    
+                    <div class="nutrition-item">
+                        <h4>Protein</h4>
+                        <p class="nutrition-value">4g</p>
+                    </div>
+                    
+                    <div class="nutrition-item">
+                        <h4>Fat</h4>
+                        <p class="nutrition-value">18g</p>
+                    </div>
+                </div>
+                
+                <div class="recipe-source">
+                    <p>Recipe inspired by <a href="https://www.foodnetwork.com" target="_blank" rel="noopener">Food Network <i class="fas fa-external-link-alt"></i></a></p>
+                </div>
+            </div>
+        </section>
 
-<h2>Instructions (Same for All Flavors)</h2>
-<ol>
-<li class="instruction-step"><span>🥣</span>Whisk sugar, milk, and salt.</li>
-<li class="instruction-step"><span>🍶</span>Stir in heavy cream and vanilla extract.</li>
-<li class="instruction-step"><span>🍽️</span>Pour mixture into a freezer-safe dish.</li>
-<li class="instruction-step"><span>❄️</span>Freeze for 2 hours, then whisk to break ice crystals.</li>
-<li class="instruction-step"><span>🔄</span>Repeat whisking every hour.</li>
-<li class="instruction-step"><span>🍫</span>Add extras during final stir.</li>
-<li class="instruction-step"><span>🍨</span>Freeze until firm and enjoy!</li>
-</ol>
+        <!-- Footer -->
+        <footer class="page-footer">
+            <p>Made with <i class="fas fa-heart"></i> by Ice Cream Enthusiasts</p>
+            <p class="copyright">© <span id="current-year">2024</span> Homemade Ice Cream Recipes</p>
+        </footer>
+    </div>
 
-<h2>Tips</h2>
-<p>
-Use <u>very cold ingredients</u> for faster freezing. 
-Blend after the first freeze for creaminess. 
-Avoid over-freezing to keep it soft!
-</p>
-
-<section class="nutrition">
-<h2>Nutrition Facts (Per Serving)</h2>
-<ul>
-<li>Calories: 290</li>
-<li>Carbohydrates: 28g</li>
-<li>Protein: 4g</li>
-<li>Fat: 18g</li>
-</ul>
-<p>Recipe inspired by <a href="https://www.foodnetwork.com" target="_blank">Food Network</a>.</p>
-</section>
-
-</div>
+    <!-- JavaScript for current year -->
+    <script>
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+    </script>
+    
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
 </body>
 </html>
